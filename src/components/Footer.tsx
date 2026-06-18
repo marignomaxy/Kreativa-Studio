@@ -7,9 +7,9 @@ export function Footer() {
         <img src={brand.logoLight} alt="" loading="lazy" decoding="async" />
         <span>{brand.name}</span>
       </a>
-      <p>© 2024 Kreativa Studio Arq. Todos los derechos reservados.</p>
+      <p>© 2026 Kreativa Studio Arq. Todos los derechos reservados.</p>
       <nav aria-label="Navegación secundaria">
-        {navLinks.slice(0, 3).map((link) => (
+        {navLinks.map((link) => (
           <a href={link.href} key={link.href}>
             {link.label}
           </a>

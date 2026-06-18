@@ -2,12 +2,12 @@ import { hero } from '../data/siteData';
 
 export function Hero() {
   return (
-    <section className="hero" id="top" aria-label="Inicio">
-      <img className="hero-image" src={hero.image} alt="Exterior del proyecto Juárez 001" decoding="async" />
+    <section className="hero" id="top" aria-labelledby="hero-title">
+      <img className="hero-image" src={hero.image} alt={hero.alt} decoding="async" fetchPriority="high" />
       <div className="hero-overlay" />
       <div className="hero-content">
         <p className="hero-eyebrow">{hero.eyebrow}</p>
-        <h1 className="hero-title">
+        <h1 className="hero-title" id="hero-title">
           {hero.title}
           <br />
           <em>{hero.titleEmphasis}</em>

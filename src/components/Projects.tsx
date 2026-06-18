@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { projects } from '../data/siteData';
 
 export function Projects() {
@@ -13,18 +13,18 @@ export function Projects() {
     setActiveImageIndex(0);
   };
 
-  const closeProject = () => {
+  const closeProject = useCallback(() => {
     setActiveProjectIndex(null);
     setActiveImageIndex(0);
-  };
+  }, []);
 
-  const showPrevious = () => {
+  const showPrevious = useCallback(() => {
     setActiveImageIndex((current) => (current === 0 ? gallery.length - 1 : current - 1));
-  };
+  }, [gallery.length]);
 
-  const showNext = () => {
+  const showNext = useCallback(() => {
     setActiveImageIndex((current) => (current === gallery.length - 1 ? 0 : current + 1));
-  };
+  }, [gallery.length]);
 
   useEffect(() => {
     if (!activeProject) {
@@ -53,12 +53,12 @@ export function Projects() {
       document.body.classList.remove('modal-open');
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [activeProject, gallery.length]);
+  }, [activeProject, closeProject, showNext, showPrevious]);
 
   return (
-    <section className="projects" id="proyectos">
+    <section className="projects" id="proyectos" aria-labelledby="projects-title">
       <div className="projects-header reveal">
-        <h2>
+        <h2 id="projects-title">
           Proyectos
           <br />
           <em>destacados</em>
@@ -92,13 +92,18 @@ export function Projects() {
       </div>
 
       {activeProject && (
-        <div className="project-modal" role="dialog" aria-modal="true" aria-label={`Galería de ${activeProject.title}`}>
+        <div
+          className="project-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="project-modal-title"
+        >
           <button className="project-modal-backdrop" type="button" onClick={closeProject} aria-label="Cerrar galería" />
           <div className="project-modal-panel">
             <div className="project-modal-header">
               <div>
                 <p>{activeProject.tag}</p>
-                <h3>{activeProject.title}</h3>
+                <h3 id="project-modal-title">{activeProject.title}</h3>
               </div>
               <button type="button" onClick={closeProject} aria-label="Cerrar galería">
                 Cerrar

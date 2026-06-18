@@ -2,19 +2,19 @@ import { services } from '../data/siteData';
 
 export function Services() {
   return (
-    <section className="services section-pad" id="servicios">
+    <section className="services section-pad" id="servicios" aria-labelledby="services-title">
       <div className="services-header reveal">
         <div>
           <p className="section-label">Servicios</p>
-          <h2>
+          <h2 id="services-title">
             Lo que
             <br />
             <em>hacemos</em>
           </h2>
         </div>
         <p className="section-text">
-          Integramos diseño y ejecución en un solo estudio. Desde el primer boceto hasta la llave en mano, somos tu
-          equipo completo.
+          Integramos arquitectura, interiorismo, remodelaciones y ejecución de obra en un solo estudio. Desde el primer
+          boceto hasta la entrega, somos tu equipo completo en Lima.
         </p>
       </div>
       <div className="services-grid">

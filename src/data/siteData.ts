@@ -32,26 +32,31 @@ export const navLinks = [
 ];
 
 export const hero = {
-  eyebrow: 'Lima, Perú · Arquitectura · Interiorismo · Ejecución',
+  eyebrow: 'Lima, Perú · Arquitectura · Interiorismo · Remodelaciones',
   title: 'Espacios',
   titleEmphasis: 'que perduran',
   description:
-    'Diseñamos espacios que conectan propósito, estética y técnica para transformar ideas en proyectos construidos con excelencia.',
+    'Arquitectura en Lima para viviendas, locales comerciales y remodelaciones. Diseñamos interiores, planimetría y ejecución de obra con técnica, identidad y detalle.',
   image: heroJuarezImage,
+  alt: 'Render exterior del proyecto arquitectónico Juárez 001 por Kreativa Studio Arq en Lima',
 };
 
-export const marqueeItems = ['Arquitectura', 'Interiorismo', 'Ejecución', 'Diseño', 'Construcción', 'Lima, Perú'];
+export const marqueeItems = ['Arquitectura', 'Interiorismo', 'Ejecución', 'Diseño', 'Remodelaciones', 'Lima, Perú'];
 
 export const about = {
   label: 'Nosotros',
   title: 'Del concepto',
   titleEmphasis: 'al detalle',
   text:
-    'Somos un estudio de arquitectura e interiorismo en Lima, Perú. Desarrollamos proyectos residenciales, comerciales y de interior con un enfoque integral: desde la idea inicial y el diseño, hasta la documentación técnica y la ejecución de obra. Nuestra visión combina creatividad, funcionalidad y precisión constructiva para entregar espacios que perduran.',
+    'Somos un estudio de arquitectura e interiorismo en Lima, Perú. Desarrollamos proyectos residenciales, comerciales y remodelaciones con un enfoque integral: concepto, diseño de espacios, planimetría, documentación técnica y ejecución de obra. Nuestra mirada combina creatividad, funcionalidad y precisión constructiva para crear espacios que se sienten propios y perduran.',
   tag: 'Juárez 001',
   images: {
     main: heroJuarezImage,
     accent: interiorPremiumImage,
+  },
+  alts: {
+    main: 'Render exterior de proyecto arquitectónico comercial Juárez 001 diseñado por Kreativa Studio Arq',
+    accent: 'Diseño interior de baño premium con luz natural y vegetación por Kreativa Studio Arq',
   },
 };
 
@@ -61,10 +66,10 @@ export const projects = [
     title: 'Juárez 001',
     tag: 'Comercial · Ejecutado',
     image: heroJuarezImage,
-    alt: 'Exterior del proyecto comercial Juárez 001',
+    alt: 'Render exterior de proyecto arquitectónico comercial Juárez 001 en Lima',
     gallery: [
-      { image: heroJuarezImage, alt: 'Vista exterior completa de Juárez 001' },
-      { image: juarezAccessImage, alt: 'Detalle de acceso y materialidad de Juárez 001' },
+      { image: heroJuarezImage, alt: 'Vista exterior completa del proyecto comercial Juárez 001' },
+      { image: juarezAccessImage, alt: 'Detalle de acceso y materialidad del proyecto Juárez 001' },
     ],
   },
   {
@@ -72,11 +77,11 @@ export const projects = [
     title: 'Casa Curo 720',
     tag: 'Vivienda multifamiliar · Proyecto',
     image: casaCuroImage,
-    alt: 'Vista vertical del proyecto Casa Curo 720',
+    alt: 'Fachada vertical de vivienda multifamiliar Casa Curo 720 diseñada por Kreativa Studio Arq',
     gallery: [
-      { image: casaCuroImage, alt: 'Fachada principal de Casa Curo 720' },
+      { image: casaCuroImage, alt: 'Fachada principal de vivienda multifamiliar Casa Curo 720' },
       { image: curoFacadeDetailImage, alt: 'Detalle de ladrillo y balcones de Casa Curo 720' },
-      { image: curoAccessDetailImage, alt: 'Detalle de acceso de Casa Curo 720' },
+      { image: curoAccessDetailImage, alt: 'Detalle de acceso residencial de Casa Curo 720' },
     ],
   },
   {
@@ -84,11 +89,11 @@ export const projects = [
     title: 'Baños comerciales',
     tag: 'Interiorismo · Comercial',
     image: interiorCommercialImage,
-    alt: 'Interiorismo de baño comercial',
+    alt: 'Diseño interior de baño comercial contemporáneo por Kreativa Studio Arq',
     gallery: [
-      { image: interiorCommercialImage, alt: 'Vista interior de baño comercial' },
-      { image: interiorAxonometricImage, alt: 'Axonometría de baño comercial' },
-      { image: interiorPremiumImage, alt: 'Baño premium con luz natural y vegetación' },
+      { image: interiorCommercialImage, alt: 'Vista interior de baño comercial con propuesta contemporánea' },
+      { image: interiorAxonometricImage, alt: 'Axonometría técnica de baño comercial para documentación de obra' },
+      { image: interiorPremiumImage, alt: 'Diseño interior de baño premium con lavatorio circular y vegetación' },
     ],
   },
   {
@@ -96,12 +101,12 @@ export const projects = [
     title: 'Planimetría Curo',
     tag: 'Documentación técnica',
     image: planCuroSecondImage,
-    alt: 'Planimetría del Proyecto Curo segundo nivel',
+    alt: 'Plano arquitectónico del segundo nivel del proyecto Curo',
     imageFit: 'contain',
     gallery: [
-      { image: planCuroFirstImage, alt: 'Planta primer nivel del Proyecto Curo' },
-      { image: planCuroSecondImage, alt: 'Planta segundo nivel del Proyecto Curo' },
-      { image: planCuroRoofImage, alt: 'Planta azotea del Proyecto Curo' },
+      { image: planCuroFirstImage, alt: 'Plano arquitectónico de primer nivel del proyecto Curo' },
+      { image: planCuroSecondImage, alt: 'Plano arquitectónico de segundo nivel del proyecto Curo' },
+      { image: planCuroRoofImage, alt: 'Plano arquitectónico de azotea del proyecto Curo' },
     ],
   },
   {
@@ -109,9 +114,9 @@ export const projects = [
     title: 'Dúplex OP 1',
     tag: 'Planimetría · Vivienda',
     image: planDuplexImage,
-    alt: 'Planimetría de dúplex opción 1',
+    alt: 'Planimetría de vivienda dúplex desarrollada por Kreativa Studio Arq',
     imageFit: 'contain',
-    gallery: [{ image: planDuplexImage, alt: 'Planta de dúplex opción 1' }],
+    gallery: [{ image: planDuplexImage, alt: 'Plano arquitectónico de vivienda dúplex opción 1' }],
   },
 ];
 
@@ -120,22 +125,25 @@ export const services = [
     number: '01',
     title: 'Arquitectura',
     description:
-      'Diseñamos espacios funcionales y estéticos, adaptados a cada contexto y necesidad del cliente, con rigor técnico y visión creativa.',
+      'Diseñamos proyectos residenciales y comerciales en Lima con criterio funcional, estética contemporánea y rigor técnico desde la idea inicial.',
   },
   {
     number: '02',
     title: 'Interiorismo',
-    description: 'Creamos interiores cálidos y contemporáneos que elevan la experiencia de habitar. Cada detalle cuenta.',
+    description:
+      'Creamos interiores cálidos, eficientes y coherentes con cada estilo de vida, cuidando materialidad, iluminación, mobiliario y detalle.',
   },
   {
     number: '03',
-    title: 'Diseño de planos',
-    description: 'Documentación técnica precisa para licencias, obra y ejecución sin contratiempos ni sorpresas.',
+    title: 'Planimetría',
+    description:
+      'Desarrollamos planos, documentación técnica y compatibilización para licencias, obra, remodelaciones y ejecución sin improvisaciones.',
   },
   {
     number: '04',
     title: 'Ejecución de obra',
-    description: 'Gestionamos y ejecutamos cada etapa con control, calidad y compromiso. Del papel a la realidad.',
+    description:
+      'Acompañamos la construcción, remodelación y seguimiento de obra con control de calidad, coordinación técnica y compromiso con el resultado.',
   },
 ];
 
@@ -143,22 +151,26 @@ export const processSteps = [
   {
     number: '01',
     title: 'Concepto e idea',
-    description: 'Escuchamos, analizamos el contexto y desarrollamos la visión inicial que guiará cada decisión del proyecto.',
+    description:
+      'Escuchamos tus necesidades, analizamos el contexto y definimos una visión clara para el diseño arquitectónico o interior.',
   },
   {
     number: '02',
     title: 'Diseño y desarrollo',
-    description: 'Traducimos la idea en planos, renders y documentación técnica con precisión y creatividad sin concesiones.',
+    description:
+      'Traducimos la idea en distribución, renders, planos y documentación técnica con precisión, creatividad y decisiones bien sustentadas.',
   },
   {
     number: '03',
     title: 'Permisos y licencias',
-    description: 'Gestionamos toda la documentación para la aprobación municipal sin demoras ni complicaciones burocráticas.',
+    description:
+      'Preparamos documentación para trámites, coordinación técnica y revisión municipal cuando el proyecto lo requiere.',
   },
   {
     number: '04',
     title: 'Construcción y entrega',
-    description: 'Ejecutamos con supervisión continua, garantizando calidad, plazos y el resultado que imaginamos juntos.',
+    description:
+      'Ejecutamos y supervisamos cada etapa para cuidar acabados, tiempos, presupuesto y coherencia entre diseño y obra construida.',
   },
 ];
 
@@ -166,32 +178,32 @@ export const interiors = [
   {
     title: 'Baño G - Residencial',
     image: interiorPremiumImage,
-    alt: 'Baño premium con lavatorio circular, plantas y luz natural',
+    alt: 'Diseño interior de baño residencial premium con lavatorio circular, plantas y luz natural',
   },
   {
     title: 'Local SSHH - Comercial',
     image: interiorCommercialImage,
-    alt: 'Baño comercial con propuesta de interiorismo contemporáneo',
+    alt: 'Diseño interior de servicios higiénicos comerciales con acabados contemporáneos',
   },
   {
     title: 'Vista isométrica',
     image: interiorAxonometricImage,
-    alt: 'Axonometría técnica de baño comercial',
+    alt: 'Vista isométrica técnica de baño comercial para documentación arquitectónica',
   },
   {
     title: 'Planta primer nivel',
     image: planKreativaFirstImage,
-    alt: 'Plano de planta primer nivel de Kreativa Studio Arq',
+    alt: 'Plano de planta primer nivel desarrollado por Kreativa Studio Arq',
   },
   {
     title: 'Planta azotea',
     image: planKreativaRoofImage,
-    alt: 'Plano de planta azotea de Kreativa Studio Arq',
+    alt: 'Plano arquitectónico de azotea desarrollado por Kreativa Studio Arq',
   },
   {
     title: 'Planta típica de dormitorios',
     image: planKreativaBedroomsImage,
-    alt: 'Plano de planta típica de dormitorios de Kreativa Studio Arq',
+    alt: 'Plano arquitectónico de planta típica de dormitorios por Kreativa Studio Arq',
   },
 ];
 
@@ -199,7 +211,7 @@ export const contact = {
   headline: '¿Tienes un proyecto',
   headlineEmphasis: 'en mente?',
   text:
-    'Conversemos sobre tu idea. Desde Lima trabajamos proyectos en toda la región con visión contemporánea y ejecución de excelencia.',
+    'Consultas de arquitectura, interiorismo y remodelaciones en Lima. Conversemos sobre tu vivienda, local comercial, planos, documentación técnica o ejecución de obra.',
   email: 'kreativastudioarq@gmail.com',
   whatsapp: '+51936715570',
   whatsappUrl: 'https://wa.me/51936715570',
@@ -209,7 +221,7 @@ export const contact = {
   qr: contactQrImage,
   details: [
     { label: 'Instagram', value: '@kreativastudioarq_pe' },
-    { label: 'WhatsApp', value: '(+51) 936715570' },
+    { label: 'WhatsApp', value: '(+51) 936 715 570' },
     { label: 'Email', value: 'kreativastudioarq@gmail.com' },
     { label: 'Ubicación', value: 'Lima, Perú' },
   ],
