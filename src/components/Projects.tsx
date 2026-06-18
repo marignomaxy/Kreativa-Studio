@@ -59,11 +59,8 @@ export function Projects() {
     <section className="projects" id="proyectos" aria-labelledby="projects-title">
       <div className="projects-header reveal">
         <h2 id="projects-title">
-          Proyectos
-          <br />
-          <em>destacados</em>
+          Proyectos <em>destacados</em>
         </h2>
-        <a href="#contacto">Ver todos los proyectos</a>
       </div>
       <div className="projects-grid">
         {projects.map((project, index) => (

@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Acumin Pro Condensed';
+  src: url('/fonts/acumin/acumin-pro-condensed-light.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Acumin Pro Condensed';
+  src: url('/fonts/acumin/acumin-pro-condensed-light-italic.otf') format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Acumin Pro Condensed';
+  src: url('/fonts/acumin/acumin-pro-condensed-bold.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Acumin Pro Condensed';
+  src: url('/fonts/acumin/acumin-pro-condensed-bold-italic.otf') format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+}
+
 :root {
   --cream: #f5f2ec;
   --ink: #1c1c1a;
@@ -8,8 +40,9 @@
   --mid: #746f65;
   --white: #fafaf8;
   --line: rgba(28, 28, 26, 0.1);
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'DM Sans', Arial, sans-serif;
+  --font-acumin: 'Acumin Pro Condensed', 'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: var(--font-acumin);
+  --font-body: var(--font-acumin);
 }
 
 *,
@@ -70,7 +103,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 700;
 }
 
 em {
@@ -132,7 +165,7 @@ em {
 .footer-brand span {
   display: none;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -143,12 +176,11 @@ em {
 
 .nav-cta,
 .btn,
-.projects-header a,
 .contact-cta {
   min-height: 44px;
   text-decoration: none;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -208,7 +240,7 @@ em {
   margin-bottom: 26px;
   color: var(--mid);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -385,7 +417,7 @@ em {
   color: var(--brick);
   padding: 8px 14px;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -414,10 +446,9 @@ em {
   line-height: 0.95;
 }
 
-.projects-header a {
-  color: var(--sand);
-  width: max-content;
-  border-bottom: 1px solid rgba(217, 201, 176, 0.25);
+.projects-header h2 {
+  font-size: clamp(28px, 8.8vw, 100px);
+  white-space: nowrap;
 }
 
 .projects-grid {
@@ -488,7 +519,7 @@ em {
   margin-bottom: 6px;
   color: var(--brick);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -541,7 +572,7 @@ em {
   margin-bottom: 5px;
   color: var(--brick);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -561,7 +592,7 @@ em {
   cursor: pointer;
   font-family: var(--font-body);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   padding: 10px 14px;
   text-transform: uppercase;
@@ -599,7 +630,7 @@ em {
   background: rgba(18, 18, 16, 0.72);
   color: rgba(250, 250, 248, 0.86);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   padding: 8px 10px;
 }
@@ -674,7 +705,7 @@ em {
   display: inline-block;
   margin-top: 30px;
   color: var(--brick);
-  font-weight: 300;
+  font-weight: 700;
   transition: transform 0.3s ease;
 }
 
@@ -785,7 +816,7 @@ em {
 .showcase-header span {
   color: rgba(250, 250, 248, 0.56);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -827,7 +858,7 @@ em {
   margin-top: 14px;
   color: rgba(250, 250, 248, 0.68);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -860,7 +891,7 @@ em {
 .contact-panel dt {
   color: var(--brick);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -921,7 +952,7 @@ em {
 .contact-qr span {
   color: rgba(250, 250, 248, 0.72);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.08em;
 }
 
@@ -938,7 +969,7 @@ em {
   color: rgba(250, 250, 248, 0.58);
   text-decoration: none;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -1043,7 +1074,7 @@ em {
     color: currentColor;
     text-decoration: none;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
@@ -1195,7 +1226,6 @@ em {
   }
 
   .projects-header {
-    grid-template-columns: 1fr auto;
     align-items: end;
     padding-bottom: 72px;
   }
