@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useState } from 'react';
 import { About } from './components/About';
 import { Contact, Showcase } from './components/Contact';
@@ -77,6 +78,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
